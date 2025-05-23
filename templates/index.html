@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PhishGuard</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <h1>🛡️ PhishGuard</h1>
+        
+        <form id="analyseForm">
+            <input type="text" name="numero" title="Entrez le numéro" placeholder="Entrez le numéro"><br>
+
+            <label for="texte">Message ou lien suspect :</label><br>
+            <input type="text" id="texte" name="texte" placeholder="Ex. : Cliquez ici http://arnaque.xyz"><br>
+
+            <button type="submit">Analyser</button>
+        </form>
+
+        <div id="resultat" class="result resultat-hidden"></div>
+
+        <section class="authorities-info">
+            <h2>📧 Informations sur les autorités compétentes</h2>
+            <p>En France, les principales autorités à contacter en cas de phishing sont :</p>
+            <ul>
+                <li><strong>CERT-FR</strong> : <a href="mailto:cert-fr@ssi.gouv.fr">cert-fr@ssi.gouv.fr</a> – Centre gouvernemental de veille, d’alerte et de réponse aux attaques informatiques</li>
+                <li><strong>Signal Spam</strong> : <a href="https://www.signal-spam.fr" target="_blank" rel="noopener noreferrer">https://www.signal-spam.fr</a> – Plateforme de signalement des spams et phishing</li>
+                <li><strong>Phishing Initiative</strong> : <a href="https://www.phishing-initiative.fr" target="_blank" rel="noopener noreferrer">https://www.phishing-initiative.fr</a> – Signalement des sites de phishing</li>
+                <li><strong>PHAROS</strong> : <a href="https://www.internet-signalement.gouv.fr" target="_blank" rel="noopener noreferrer">https://www.internet-signalement.gouv.fr</a> – Signalement des contenus illicites sur Internet</li>
+            </ul>
+        </section>
+
+
+        <button type="button" id="alerterBtn">🚨 Alerter les autorités</button>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>
