@@ -29,7 +29,10 @@
 
 ## 🖥️ Interface Web
 
-![Capture interface](https://github.com/Corsican2Dev/phishguard/static/img/preview_interface.png)
+<p align="center">
+  <img src="static/img/preview_interface.png" alt="Capture interface" width="800"/>
+</p>
+
 
 - Le champ **"numéro"** attend un format international : `+33612345678`
 - Le champ **"lien"** permet d’entrer une URL potentiellement frauduleuse
