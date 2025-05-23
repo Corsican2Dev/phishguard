@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="assets/phishguard.png" alt="PhishGuard Banner" width="800"/>
+</p>
 
 # 🛡️ PhishGuard
 
